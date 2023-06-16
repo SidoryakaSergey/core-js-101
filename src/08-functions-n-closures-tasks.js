@@ -42,8 +42,10 @@ function getComposition(/* f, g */) {
  *   power05(16) => 4
  *
  */
-function getPowerFunction(/* exponent */) {
-  throw new Error('Not implemented');
+function getPowerFunction(exponent) {
+  return function fn(base) {
+    return (base ** exponent);
+  };
 }
 
 /**
@@ -60,6 +62,7 @@ function getPowerFunction(/* exponent */) {
  *   getPolynom()      => null
  */
 function getPolynom() {
+  // if (arguments.length === 0) return null;
   throw new Error('Not implemented');
 }
 
